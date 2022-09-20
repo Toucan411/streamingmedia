@@ -2,6 +2,7 @@ html {
     background-color: #020659;
 }
 body {
+    width: 375px;
     margin: 0 auto;
 }
 nav {
@@ -95,19 +96,13 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-@media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    label span, input {
-        display: none;
-    }
-}
 #trending {
+    background-color: #FFFFFF;
+}
+#playlists {
+    background-color: #FFFFFF;
+}
+#curated {
     background-color: #FFFFFF;
 }
 #playlists .scroll {
@@ -136,9 +131,18 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 dl {
     display: flex;
+    color: #590242;
 }
 dt {
+    font-family: 'raleway';
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
     padding-right: 5px;
+}
+dd {
+    font-family: 'raleway';
+    font-size: 16px;
 }
 audio {
     position: absolute;
@@ -192,4 +196,72 @@ audio::-webkit-media-controls-enclosure {
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
     background: #FFFFFF;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+}
+header p {
+    font-family: 'Raleway';
+    font-size: 20px;
+    line-height: 2em;
+    color: #FFFFFF;
+}
+header {
+    background-color: #030A8C;
+}
+h1 {
+    font-size: 20px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    line-height: 2em;
+    color: #FFFFFF;
+}
+h1, h2, h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2, h3 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    line-height: 2em;
+}
+h2 {
+    font-size: 20px;
+    color: #590242;
+}
+h3 {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+#playlists p, #curated p {
+    font-family: 'Raleway';
+    font-size: 14px;
+    color: #FFFFFF;
+}
+#trending h3, #trending dl {
+    color: #590242;
+}
+footer {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 10px; 
+    color: #590242;
+}
+@media screen and (min-width:834px) {
+    body{
+        width: 834px;
+    }
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    label span, input {
+        display: none;
+    }
 }
