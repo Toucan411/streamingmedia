@@ -4,11 +4,27 @@ html {
 body {
     width: 375px;
     margin: 0 auto;
+    background-color: #FFFFFF;
+}
+header {
+    padding-top: 60px;
+    padding-bottom: 5px; 
+    padding-left: 25px; 
+    padding-right: 25px;
+    background-image: linear-gradient(to right, #2104D9, #020659, #000000);
+}
+header h1 {
+    line-height: normal;
+}
+header p {
+    font-size: 16px;
+    color: #FFFFFF;
 }
 nav {
     width: 375px;
-    background-color: #030ABC;
+    height: 67px;
     position: absolute;
+    background-color: #030A8C;
     top: 0;
     z-index: 1;
     text-transform: uppercase;
@@ -51,7 +67,8 @@ a:hover, input:hover {
 label {
     cursor: pointer;
     display: inline-block;
-    padding: 28px 20px;
+    padding: 10px 20px;
+    margin-top: -10px;
     position: relative;
     user-select: none;
 }
@@ -83,6 +100,7 @@ input {
 }
 input:checked ~ ul {
     max-height: 500px;
+    margin-top: 20px;
 }
 input:checked ~ label span {
     background: transparent;
@@ -99,11 +117,26 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 #trending {
     background-color: #FFFFFF;
 }
+#trending h2 {
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
 #playlists {
     background-color: #FFFFFF;
 }
 #curated {
     background-color: #FFFFFF;
+}
+#playlists section {
+    background-color: #0D8DFD;
+    text-align: center;
+    padding: 10px;
+}
+#curated section {
+    background-color: #020873;
+    text-align: center;
+    padding: 10px;
 }
 #playlists .scroll {
     background-color: #2699FB;
@@ -132,6 +165,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 dl {
     display: flex;
     color: #590242;
+    margin-top: -10px;
 }
 dt {
     font-family: 'raleway';
@@ -233,6 +267,7 @@ h2 {
 h3 {
     font-size: 16px;
     color: #FFFFFF;
+    margin-top: -5px;
 }
 #playlists p, #curated p {
     font-family: 'Raleway';
@@ -254,6 +289,32 @@ footer {
     body{
         width: 834px;
     }
+    nav {
+        width: 834px;
+    }
+    [href="#home"] {
+        left: 0;
+    }
+    [href="#trending"] {
+        position: absolute;
+        left: 225px;
+        padding: 16px 16px;
+    }
+    [href="#playlists"] {
+        position: absolute;
+        left: 375px;
+        padding: 16px 16px;
+    }
+    [href="#curated"] {
+        position: absolute;
+        left: 525px;
+        padding: 16px 16px;
+    }
+    [href="user"] {
+        position: absolute;
+        left: 725px;
+        padding: 16px 16px;
+    }
     ul {
         overflow: visible;
         position: absolute;
@@ -263,5 +324,11 @@ footer {
     }
     label span, input {
         display: none;
+    }
+    h3 {
+        margin-top: -5px;
+    }
+    dl {
+        margin-top: -10px;
     }
 }
