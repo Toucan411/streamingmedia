@@ -292,6 +292,7 @@ footer {
     }
     nav {
         width: 834px;
+        height: 66px;
     }
     [href="#home"] {
         position: static;
@@ -317,6 +318,9 @@ footer {
     }
     nav a {
         display: block;
+    }
+    a:hover {
+        padding-bottom: 4px;
     }
     label span, input {
         display: none;
